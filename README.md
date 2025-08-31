@@ -1,69 +1,43 @@
-# React + TypeScript + Vite
+# Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## English
+A simple Todo App built with **React**, **Vite**, and **Redux Toolkit**. Users can add, update, and remove tasks. This project demonstrates state management with Redux, component-based UI, and type safety with TypeScript.
 
-Currently, two official plugins are available:
+### Features
+- Create Todos
+- List Todos
+- Update Todos
+- Delete Todos
+- State management with **Redux Toolkit**
+- Type safety with **TypeScript**
+- Built with **Vite**
+- Icons from **React Icons**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Technologies
+- React
+- Redux Toolkit
+- TypeScript
+- Vite
+- React Icons
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Türkçe
+Basit bir **Todo Uygulaması**, **React**, **Vite** ve **Redux Toolkit** kullanılarak geliştirilmiştir. Kullanıcılar görev ekleyebilir, güncelleyebilir ve silebilir. Bu proje, Redux ile state yönetimini, bileşen tabanlı UI yaklaşımını ve TypeScript ile tip güvenliğini göstermektedir.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Özellikler
+- Todo Oluşturma
+- Todo Listeleme
+- Todo Güncelleme
+- Todo Silme
+- **Redux Toolkit** ile state yönetimi
+- **TypeScript** ile tip güvenliği
+- **Vite** ile hızlı geliştirme
+- **React Icons** ile ikon kullanımı
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Teknolojiler
+- React
+- Redux Toolkit
+- TypeScript
+- Vite
+- React Icons
