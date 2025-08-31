@@ -1,0 +1,81 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  margin-top: 30px;
+  justify-items: center;
+}
+.todo-create {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.todo-input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  outline: none;
+  padding: 10px 0;
+}
+.todo-button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  background-color: gold;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.todo-button:hover {
+  background-color: #111;
+  color: gold;
+}
+.todo-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  padding: 12px 5px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.icons {
+  font-size: 22px;
+  cursor: pointer;
+}
+.icons .remove-icon {
+  margin-right: 5px;
+  color: red;
+  transition: all 0.3s;
+}
+.icons .remove-icon:hover {
+  transform: scale(1.2);
+}
+.icons .edit-icon {
+  color: green;
+  transition: all 0.3s;
+}
+
+.icons .edit-icon:hover {
+  transform: scale(1.2);
+}
+
+.icons .check-icon {
+  color: rgb(4, 190, 252);
+  transition: all 0.3s;
+}
+
+.icons .check-icon:hover {
+  transform: scale(1.2);
+}
+.todo-input-desc {
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  outline: none;
+}
